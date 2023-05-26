@@ -1,5 +1,5 @@
 // you can write js here
-
+// exo 5
 console.log('exo-5');
 
 let input = "numerique"
