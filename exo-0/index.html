@@ -8,58 +8,96 @@
         <h1>Exercice 0</h1>
 
         <script type="text/javascript">
+            //Ouverture "script" pour JavaScript
 
         /* Section 1 */   
 
         var name = "Joe";
+        // variable "nom" qui contient Joe
         var city = 'London';
+        // Variable "Ville" qui contient Londre
         var age = 32;
+        // Variable age qui a pour valeur un entier "32"
         var isRed = true;
+        // Variable "isRed" qui renvoit un boolean "true"
         var isOld = age > 80;
+        // Variable "isOld" qui prends pour valeur un entier de la variable "age" superieur a 80
 
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
 
+        // Je decalre une variable "previousJobs" qui contient du texte (ancien métier)
+
         function info(height, weight) {
+            // Je decalre une fonction info qui a pour parametre un entier "taille" et un entier "poids"
             if (height > 180) {
                 console.log('Vous êtes grand');
+                // Je declare une condition disant que si ma variable "taille" est supérieur a 180 alors retourne moi "Vous etes grand" dans la console
             }
             if (weight < 0) {
+                // Si
                 console.log('oups, there is a problem');
+                // Je declare une condition stipulant que si ma variable poids retournant un entier est inferieur a 0 alors retourne moi/imprime moi "oups il y a un probleme"
             } else if ( weight < 15) {
                 console.log('Are you that slim ?')
+                // Je declare une condition "sinon si" stipulant que si mon poids est supérieur a 0 mais inferieur a 15 alors retourne dans la console "Es tu si fin?"
             } else {
                 console.log('Good !')
+                //Je declare une dernière condition "sinon" qui me retourne "good" pour tout les autres cas de figure
             }
         }
 
         info(165, 45);
+        // J'appel la fonction info avec pour parametre les valeur 165 , 45
 
         var myHeight = 175;
+        // Je declare une variable nommé myHeight avec pour valeur un l'entier 175
         var myWeight = 86;
+        // Je declare une variable nommé myWeight avec pour valeur un l'entier 86
 
         info(myHeight, myWeight);
+     // J'appel de nouveau ma fonction info qui prends cette fois pour parametre mes variables myHeight, et myWeight retournant des entiers
 
         info(myHeight + 15, myWeight - 100);
-
+    //J'appel ma fonction info qui prends pour parametre mes variables Taille et poids retournant des entiers, en ajoutant  15 a ma taille et en enlevant 100 a mon poids 
         function toUpper(variable) {
+            // Je déclare une fonction toUpper avec pour parametres "variable"
             return variable.toUpperCase();
+            //Retourne moi la valeur de de mon parametre
         }
 
         var upperName = toUpper(name);
+        // Je declare une variable upperName qui est égal a ma fonction toUpper avec pour parametres name
 
-        for (i = 0; i < 3; i = i + 1) {
+        for (i = 0; i < 3; i = i + 1) { 
+            // Je declare une boucle for avec comme parametres "index = 0; index inferieur a 3; et index = index + 1 (indentation)"
             console.log(previousJobs[i]);
+            // Dans la console affiche moi ma variable previousJobs a l'index dans le tableau
         }
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
+        // afficher la ville dans laquele Joe vit. 
+        console.log (city);
+        
 
         // afficher si Joe est roux ou pas.
 
+        function cheveux (isOld, isRed) {
+              if (isRed == true){
+              console.log ('Joe est roux');
+              }
+              if (isOld > 80 && isOld == true){
+              console.log ('Joe est vieux');
+              }
+        }
+
+        cheveux(isOld, isRed);
+
         /* Section 3 */
 
-        // console.log(myVariable);
+        console.log(myVariable);
+
+        // Erreur car la variable n'est pas déclarée.
 
         </script>
 
